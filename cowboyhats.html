@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cowboy Hats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,400;0,600;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Smokum&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: white;
+      }
+      h1 {
+        text-align: center;
+        font-family: Comfortaa, sans-serif;
+        font-weight: 600;
+      }
+      h2 {
+        font-size: 15px;
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        color: #885df1;
+      }
+      .learnMore {
+        display: block;
+        text-decoration: none;
+      }
+      .learnMore:hover {
+        text-decoration: underline;
+      }
+      .info {
+        font-size: 12px;
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.5;
+        color: black;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 30px;
+      }
+      .madeBy {
+        text-align: center;
+        font-size: 12px;
+        font-family: monospace;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        padding: 20px;
+        border-radius: 50%;
+      }
+      button {
+        border-radius: 20px;
+        margin: 0 auto;
+        display: block;
+        background: linear-gradient(
+          110.5deg,
+          rgba(248, 196, 249, 0.66) 22.8%,
+          rgba(253, 122, 4, 0.15) 64.6%
+        );
+        border: 1px solid #885df1;
+        color: #885df1;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 10px 20px;
+        text-decoration: none;
+        transition: all 200ms ease;
+        box-shadow: 2px 2px 5px #af9cdf;
+      }
+      button:hover {
+        color: #fff;
+        background: #885df1;
+      }
+      div {
+        max-width: 550px;
+        margin: 0 auto;
+        background: linear-gradient(
+          110.5deg,
+          rgba(248, 196, 249, 0.66) 22.8%,
+          rgba(253, 122, 4, 0.15) 64.6%
+        );
+        border-radius: 30px;
+        box-shadow: 2px 2px 100px #af9cdf;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>I love cowboy hats</h1>
+      <h2>
+        I am currently in Austin Texas and therefore found it appropriate to
+        make a website about my love for cowboy hats
+        <hr />
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/321/original/Screenshot_2023-03-12_at_16.28.58.png?1678663752"
+        alt=""
+      />
+      <button>👉 Buy cowboy hat 🤠</button>
+      <br />
+      <p class="info">
+        The cowboy hat is a high-crowned, wide-brimmed hat best known as the
+        defining piece of attire for the North American cowboy. Today it is worn
+        by many people, and is particularly associated with ranch workers in the
+        western and southern United States, western Canada and northern Mexico,
+        with many country, regional Mexican and sertanejo music performers, and
+        with participants in the North American rodeo circuit. It is recognized
+        around the world as part of Old West apparel.
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Cowboy_hat"
+          class="learnMore"
+          target="_blank"
+          >Learn more..
+        </a>
+      </p>
+      <br />
+      <p class="madeBy">Made by Caroline Steen</p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let emoji = prompt("What is your favorite emoji?");
+        let city = prompt("Which city do you live in?");
+        if (name.length) {
+          alert(
+            "Hello, " +
+              name +
+              " " +
+              emoji +
+              " We will get back to you about the best places to buy cowboy hats in " +
+              city +
+              "!"
+          );
+        } else {
+          alert(
+            "You probably don't want a cowboy hat - but that is okay 🤠 Howdy!"
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
